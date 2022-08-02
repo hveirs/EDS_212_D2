@@ -1,0 +1,46 @@
+---
+title: "Derivatives Intro"
+author: "Hailey Veirs"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library()
+
+```
+
+## Derivatives Introduction in R
+
+Find the derivative of $f(x) = 5x^2$
+
+(LaTeX format is just two $ signs, double on each end for a fully blocked out section)
+
+```{r}
+# "expression" allows you to write an unevaluated expression with x undefined
+ex_1 <- expression(5 * (x ^ 2))
+# without "expression", R would think that x is another assigned value, 
+# then since it isn't defined by us, it would say that it can't run 
+# because x isn't defined.
+
+# deriv(expression to be derived, "value with respect to")
+my_derivative <- deriv(ex_1, "x")
+
+# check the derivative value at x = 2.8
+x <- 2.8
+eval(my_derivative)
+```
+
+Find the slope of $g(z) = 2z^3-10.5z^2+4.1$
+
+```{r}
+gz <- expression(2 * (z^3) - 10.5 * (z^2) + 4.1)
+
+dg_dz <- D(gz, "z")
+
+# Evaluate the deriv over a range of values
+z <- seq(from = -3, to = 4, by = 0.5)
+eval(dg_dz)
+```
+
