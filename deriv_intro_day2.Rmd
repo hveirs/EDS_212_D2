@@ -44,3 +44,9 @@ z <- seq(from = -3, to = 4, by = 0.5)
 eval(dg_dz)
 ```
 
+## Testing Github version control and Notes
+
+The command: "usethis::use_git()" allows us to create a LOCAL git repository to have tracked versions and changes.
+
+The command: "usethis::use_github()" allows us to connect the previously created git repository to the GitHub repository ONLINE.
+
