@@ -50,3 +50,5 @@ The command: "usethis::use_git()" allows us to create a LOCAL git repository to 
 
 The command: "usethis::use_github()" allows us to connect the previously created git repository to the GitHub repository ONLINE.
 
+Now, press commit in the Git tab up in the right corner, and we can commit changes to the local repo.
+To push them to GitHub, we need to push this commit by pressing the green arrow next to commit.
