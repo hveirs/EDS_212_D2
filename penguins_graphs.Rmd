@@ -7,7 +7,19 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
 ```
 
+### Scatterplot of body mass vs flipper length:
 
+Using ggplot
+
+```{r}
+ggplot(data = penguins, aes(body_mass_g, flipper_length_mm)) + 
+  geom_point(aes(color = species)) + 
+  xlab("Body Mass (g)") + 
+  ylab("Flipper Length (mm)")
+
+```
 
