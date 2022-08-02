@@ -52,3 +52,5 @@ The command: "usethis::use_github()" allows us to connect the previously created
 
 Now, press commit in the Git tab up in the right corner, and we can commit changes to the local repo.
 To push them to GitHub, we need to push this commit by pressing the green arrow next to commit.
+
+If it asks you for a password for github, try the laptop password
